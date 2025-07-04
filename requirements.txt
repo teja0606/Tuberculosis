@@ -1,0 +1,11 @@
+torch
+torchvision
+scikit-learn
+matplotlib
+seaborn
+opencv-python-headless
+flask
+grad-cam
+python-dotenv
+requests
+gunicorn

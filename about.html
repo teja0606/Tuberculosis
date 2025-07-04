@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TB AI Assistant | About</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body class="about-page">
+    <!-- Static Background Image -->
+    <div class="static-background"></div>
+
+    <main class="main-content">
+      <!-- Sidebar Navigation -->
+      <nav class="main-nav">
+        <div class="nav-header">
+          <i class="ph-bold ph-first-aid-kit"></i>
+          <span>TB AI Assistant</span>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="ph-bold ph-chats-circle"></i> Chatbot</a
+            >
+          </li>
+          <li>
+            <a href="detector.html"
+              ><i class="ph-bold ph-microscope"></i> Detector</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="active"
+              ><i class="ph-bold ph-info"></i> About</a
+            >
+          </li>
+        </ul>
+        <div class="nav-footer">
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle theme"
+          >
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main About Container -->
+      <div class="content-container">
+        <div class="page-title-container">
+          <h1>About Ravi Teja</h1>
+          <p>Insights into the creator of this AI Assistant.</p>
+        </div>
+
+        <div class="about-content-wrapper">
+          <div class="profile-card">
+            <div class="profile-image-wrapper">
+              <!-- Placeholder for the person's image -->
+              <img
+                src="/static/images/person.jpg"
+                alt="Profile Picture"
+                id="profile-image"
+              />
+            </div>
+            <div class="profile-details">
+              <h2>A Visionary in AI and Education</h2>
+              <p>
+                Ravi Teja is a Senior Generative AI Engineer with over 9 years
+                of experience in teaching and IT. His expertise spans more than
+                5 years in data science, contributing to innovative solutions
+                leveraging data for intelligent systems.
+              </p>
+              <p>
+                Currently, Ravi Teja is pursuing a part-time PhD at Lovely
+                Professional University (LPU) under the guidance of Dr.
+                Dalwinder Singh. His doctoral research focuses on advancing
+                generative AI, aiming to provide original insights and
+                methodologies for both industry and academia.
+              </p>
+              <p>
+                A notable part of his academic contribution includes the
+                "Development of Convolution Neural Networks Model for Detection
+                of Pulmonary Tuberculosis using CT Scan Images." This
+                significant work was submitted by Meka Lakshmi Raviteja, with
+                Registration No: 42300130. This blend of practical engineering
+                leadership and rigorous academic inquiry highlights his
+                comprehensive approach to mastering and evolving the field of
+                artificial intelligence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>

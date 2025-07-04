@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TB AI Assistant | Chatbot</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <!-- Static Background Image -->
+    <div class="static-background"></div>
+
+    <main class="main-content">
+      <!-- Sidebar Navigation -->
+      <nav class="main-nav">
+        <div class="nav-header">
+          <i class="ph-bold ph-first-aid-kit"></i>
+          <span>TB AI Assistant</span>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="active"
+              ><i class="ph-bold ph-chats-circle"></i> Chatbot</a
+            >
+          </li>
+          <li>
+            <a href="detector.html"
+              ><i class="ph-bold ph-microscope"></i> Detector</a
+            >
+          </li>
+          <li>
+            <a href="about.html"><i class="ph-bold ph-info"></i> About</a>
+          </li>
+        </ul>
+        <div class="nav-footer">
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle theme"
+          >
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main Chat Container -->
+      <div class="content-container">
+        <div class="page-title-container">
+          <h1>Tuberculosis Chatbot</h1>
+          <p>
+            Your guide to understanding Tuberculosis. Ask me about symptoms,
+            causes, or prevention.
+          </p>
+        </div>
+
+        <div class="chat-box" id="chat-box" aria-live="polite">
+          <!-- Chat messages will appear here -->
+        </div>
+
+        <div class="suggestion-cards" id="suggestion-cards">
+          <!-- Suggestion cards will be dynamically inserted by JS -->
+        </div>
+
+        <div class="chat-input-wrapper">
+          <div class="chat-input-area">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Type your message..."
+              aria-label="Your message"
+              autocomplete="off"
+            />
+            <button id="send-button" aria-label="Send message">
+              <i class="ph-bold ph-paper-plane-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT LIBRARIES & SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>

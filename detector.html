@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TB AI Assistant | Detector</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body class="detector-page">
+    <!-- Static Background Image -->
+    <div class="static-background"></div>
+
+    <main class="main-content">
+      <!-- Sidebar Navigation -->
+      <nav class="main-nav">
+        <div class="nav-header">
+          <i class="ph-bold ph-first-aid-kit"></i>
+          <span>TB AI Assistant</span>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="ph-bold ph-chats-circle"></i> Chatbot</a
+            >
+          </li>
+          <li>
+            <a href="detector.html" class="active"
+              ><i class="ph-bold ph-microscope"></i> Detector</a
+            >
+          </li>
+          <li>
+            <a href="about.html"><i class="ph-bold ph-info"></i> About</a>
+          </li>
+        </ul>
+        <div class="nav-footer">
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle theme"
+          >
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main Detector Container -->
+      <div class="content-container">
+        <div class="page-title-container">
+          <h1>Tuberculosis Detector</h1>
+          <p>
+            Upload a chest X-ray to get a prediction from our custom Hybrid
+            CNN-Transformer model.
+          </p>
+        </div>
+
+        <div class="detector-wrapper">
+          <!-- Upload Area -->
+          <div class="upload-container" id="upload-container">
+            <form id="upload-form">
+              <div class="upload-area" id="upload-area">
+                <i class="ph-bold ph-cloud-arrow-up"></i>
+                <p><strong>Click to upload</strong> or drag and drop</p>
+                <span>PNG, JPG, or JPEG</span>
+                <input
+                  type="file"
+                  id="file-input"
+                  name="file"
+                  accept=".png, .jpg, .jpeg"
+                  hidden
+                />
+              </div>
+            </form>
+          </div>
+
+          <!-- Results Area -->
+          <div class="results-container" id="results-container">
+            <div class="image-preview-wrapper">
+              <img id="image-preview" src="#" alt="Uploaded X-Ray" />
+            </div>
+            <div class="results-details">
+              <h2>Analysis Result</h2>
+              <div class="prediction-display">
+                <p id="prediction-text"></p>
+              </div>
+              <div class="confidence-display">
+                <h3>Confidence</h3>
+                <p id="confidence-score"></p>
+              </div>
+              <button id="analyze-another-btn" class="secondary-button">
+                Analyze Another Image
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>
